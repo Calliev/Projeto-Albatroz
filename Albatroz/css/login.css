@@ -1,36 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Sono:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600&family=Poppins:ital,wght@1,100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sarala&family=Tiro+Devanagari+Marathi&display=swap');
 
-:root{
-    --first-color: hsl(219, 69%, 56%);
-    --reserv-color: #011F26;
-    --back: #565755;
-    --lines: #17664E;
-
-    --fist-text: 'Sono', sans-serif;
-    --reserv-text: 'Quicksand', sans-serif;
-    --body-font:'Exo', sans-serif;
-    --h1-font-size: 2em;
-    --normal-font:16px;
-}
-
-/* 
-POSSIVEIS IDEIAS DE CORES
-1 - BACKGROUND: #011F26
-2 - LINHAS: #026873
-3 - LINHAS: #025E73
-4-  LINHAS:#F2668B
-
-*/
-/* ======== CONFIG PADRAO DO CORPO DO SITE ========*/
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,7 +14,6 @@ body{
     background-color: #000;
 }
 
-/* ======== CONFIG DAS SESSÕES E FORM DE LOGIN =========*/
 section{
     position: absolute;
     width: 100vw;
@@ -98,11 +73,10 @@ span:hover{
     }
 }
 
-
 .sigin{
     position: absolute;
     display: flex;
-    width: 400px;
+    width: 300px;
     padding: 40px;
     border-radius: 10px;
     background: #333;
@@ -112,6 +86,7 @@ span:hover{
     box-shadow: 0 5px 15px var(--reserv-color);
 }
 
+
 .container{
     position: relative;
     width: 100%;
@@ -119,8 +94,9 @@ span:hover{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 40px;
+    gap: 10px;
 }
+
 
 h2{
     font-family: var(--body-font);
@@ -142,8 +118,6 @@ h2{
     width: 100%;
 }
 
-
-
 input{
     position: relative;
     width: 100%;
@@ -157,64 +131,94 @@ input{
     font-size: 1em;
 }
 
-i{
-    position: absolute;
-    left: 0;
-    padding: 10px;
-    font-style: normal;
-    color: #aaa;
-    transition: 0.5s;
-    pointer-events: none;
-}
-
-input:focus ~ i, input:valid ~ i{
-    transform: translateY(-7.5px);
-    font-size: 0.8em;
-    color: transparent;
-}
-
-.links{
-    position: relative;
+.label-float input{
     width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 2px solid #0f0;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    border-radius: 2px;
+}
+
+.label-float{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.label-float input:focus{
+    border-bottom: 2px solid #0f0;
+}
+
+.label-float label{
+    color: #0f0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label
+{
+    font-size: 13px;
+    margin-top: 0;
+    color: #0f0;
+}
+
+button{
+    border-color: #191174;
+    color: white;
+    padding: 7px;
+    background: black;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: all .4s ease-out;
+}
+
+button:hover{
+    background-color: rgb(0, 195, 255);
+    color: black;
+}
+
+.justify-center{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+p{
+    color: rgb(0, 195, 255);
+    font-size: 14pt;
+    text-align: center;
 }
 
 a{
-    text-decoration: none;
-    color: #fff;
-}
-
-a:nth-child(2){
     color: #0f0;
-    font-weight: 600;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .3s ease-out;
 }
 
-.inputBx input[type="button"]{
-    padding: 10px;
-    background: #0f0;
-    color: #000;
-    font-weight: 600;
-    font-size: 1.5em;
-    letter-spacing: 0.2em;
-    cursor: grab;
+a:hover{
+    color: rgb(0, 195, 255);
 }
 
-/* MEDIA CARIE*/
-@media (max-width: 900px){
-    span{
-        width: calc(10vw - 2px);
-        height: calc(10vw - 2px);
-    }
+.fa-eye{
+    position: absolute;
+    top: 6px;
+    right: 1px;
+    cursor: pointer;
+    color: rgb(0, 195, 255);
 }
 
-@media (max-width: 600px){
-    span{
-        width: calc(20vw - 2px);
-        height: calc(20vw - 2px);
-    }
-}
-
-
-/**/
 

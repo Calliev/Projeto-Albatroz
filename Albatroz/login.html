@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/login.css">
-    <title>Login</title>
+    <title>Login IA Fix</title>
+    <link rel="stylesheet" href="../Albatroz/css/login.css">
+    <script src="../Albatroz/js/login.js" defer></script>
 </head>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+
 <body>
-    <!-- TELA DE LOGIN -->
-<section>
-    <!-- QUADRADROS NO FUNDO -->
+    <section>
     <span></span>
     <span></span>
     <span></span>
@@ -192,37 +196,38 @@
     <span></span>
     <span></span>
 
-
     <div class="sigin">
         <div class="container">
-            <h2> Entrar </h2>
-            <!-- BLOCO DE NICK OU EMAIL-->
-            <div class="form">
+            <h2>Entrar</h2>
+
+            <div class="label-float">
                 <div class="inputBx">
-                    <input type="text" required>
-                    <i>Username</i>
+                    <input type="text" id="usuario" placeholder="Usuario" required>
+                    <label id="userLabel" for="usuario"></label> 
                 </div>
             </div>
-            <!-- BLOCO DE SENHA -->
-            <div class="form">
-                <div class="inputBx">
-                    <input type="password" required>
-                    <i>Password</i>
+
+                <div class="label-float">
+                    <div class="inputBx">
+                        <input type="password" id="senha" placeholder="Senha" required>
+                        <label id="senhaLabel" for="senha"></label> 
+                    <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                </div>  
+                <div class="justify-center">
+                    <button onclick=
+                        'entrar()' >Entrar</button>
                 </div>
-                <div class="links">
-                    <a href="#">Esqueceu a senha </a>
-                    <a href="#">Cadastre-se </a>
+                <div class="justify-center">
                 </div>
-                <div class="inputBx">
-                    <input type="button" value="Entrar">
-                </div>
-            </div>
+
+                <p>Não tem uma conta?
+                <a href="https://iafix-cadastro.netlify.app/" target="_blank">Cadastre-se</a>
+            </p>
+
+            </div>            
         </div>
     </div>
 </section>
-<!-- RODAPÉ-->
-<footer>
-
-</footer>
 </body>
 </html>
