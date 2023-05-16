@@ -5,12 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Albatroz/css/menu.css">
+    <link rel="stylesheet" href="style.css">
     <title>Albatroz</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+<link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
     <div id="page" class="site">
+
+        <aside class="site-off desktop-hide">
+            <div class="off-canvas">
+                <div class="canvas-head flexitem">
+                    <div class="logo"><a href="/"><span class="circle">.ABT</span></a></div>
+                    <a href="#" class="t-close flexcenter"><i class="ri-close-line"></i></a>
+                </div>
+                <div class="departments"></div>
+                <nav></nav>
+                <div class="thetop-nav"></div>
+            </div>
+        </aside>
+
         <header>
             <div class="header-top mobile-hide">
                 <div class="container">
@@ -28,9 +46,9 @@
                                     <li><a href="">Sign Up</a></li>
                                     <li><a href="">My Account</a></li>
                                     <li><a href="">Order Tracking</a></li>
-                                    <li><a href="">USD <span class="icon-small"><i class="ri-arrow-down-s-line"></i></span></a>
+                                    <li><a href="">R$ <span class="icon-small"><i class="ri-arrow-down-s-line"></i></span></a>
                                     <ul>
-                                        <li class="current"><a href="#">USD</a></li>
+                                        <li class="current"><a href="#">R$</a></li>
                                         <li><a href="#">EURO</a></li>
                                         <li><a href="#">GBP</a></li>
                                         <li><a href="#">IDR</a></li>
@@ -38,9 +56,10 @@
                                     </li>
                                     <li><a href="">Português <span class="icon-small"><i class="ri-arrow-down-s-line"></i></a>
                                         <ul>
-                                        <li class="current"><a href="#">Inglês</a></li>
+                                        <li class="current"><a href="#">Português</a></li>
                                         <li><a href="#">Espanhol</a></li>
                                         <li><a href="#">Bahasa</a></li>
+                                        <li><a href="#">Inglês</a></li>
                                          </ul>
                                     </li>
                                 </li>
@@ -54,7 +73,7 @@
                     <div class="wrapper flexitem">
                         <a href="#" class="trigger desktop-hide"><span class="i ri-menu-2-line"></span></a>
                         <div class="left flexitem">
-                            <div class="logo"><a href="/"><span class="circle">.Store</span></a></div>
+                            <div class="logo"><a href="/"><span class="circle">.ABT</span></a></div>
                             <nav class="mobile-hide">
                                 <ul class="flexitem second-links">
                                     <li><a href="#">Home</a></li>
@@ -157,13 +176,628 @@
                     </div>
                 </div>
             </div>
+
+            <div class="header-main mobile-hide">
+                <div class="container">
+                    <div class="wrapper flexitem">
+                        <div class="left">
+                            <div class="dpt-cat">
+                                <div class="dpt-head">
+                                    <div class="main-text">All Departaments</div>
+                                    <div class="mini-text mobile-hide">Total 1059 Products</div>
+                                    <a href="#" class="dpt-trigger mobile-hide">
+                                        <i class="ri-menu-3-line ri-xl"></i>
+                                    </a>
+                                </div>
+                                <div class="dpt-menu">
+                                    <ul class="second-links">
+                                        <li class="has-child beauty">
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-bear-smile-line"></i></div>
+                                                Beauty
+                                                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                            </a>
+                                            <ul>
+                                                <li><a href="#">Makeup</a></li>
+                                                <li><a href="#">Skin Care</a></li>
+                                                <li><a href="#">Hiar</a></li>
+                                                <li><a href="#">Frag</a></li>
+                                                <li><a href="#">Foot</a></li>
+                                                <li><a href="#">Tools</a></li>
+                                                <li><a href="#">Shave</a></li>
+                                                <li><a href="#">Personal</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-child electric">
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-bluetooth-connect-line"></i></div>
+                                                Electronic
+                                                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                            </a>
+                                            <ul>
+                                                <li><a href="#">Camera</a></li>
+                                                <li><a href="#">Cell P</a></li>
+                                                <li><a href="#">Computers</a></li>
+                                                <li><a href="#">GPS</a></li>
+                                                <li><a href="#">HeadPhones</a></li>
+                                                <li><a href="#">Home AUDIO</a></li>
+                                                <li><a href="#">Television</a></li>
+                                                <li><a href="#">Video Projectors</a></li>
+                                                <li><a href="#">Sussss</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-child fashion">
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-t-shirt-air-line"></i></div>
+                                                Women's Fashion
+                                                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                            </a>
+                                            <ul>
+                                            <li><a href="#">Clothing</a></li>
+                                            <li><a href="#">Shoes</a></li>
+                                            <li><a href="#">Jewelry</a></li>
+                                            <li><a href="#">Watches</a></li>
+                                            <li><a href="#">Handbags</a></li>
+                                            <li><a href="#">Acessories</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                        <a href="#">
+                                        <div class="icon-large"><i class="ri-shirt-line"></i></div>
+                                        Men's Fashion
+                                    </a>
+                                 </li>
+                                            <li>
+                                                <a href="#">
+                                                <div class="icon-large"><i class="ri-user-5-line"></i></div>
+                                                Girl's Fashion
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                            <div class="icon-large"><i class="ri-user-6-line"></i></div>
+                                            Boy's Fashion
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        <div class="icon-large"><i class="ri-heart-pulse-line"></i></div>
+                                        Health & Household
+                                     </a>
+                                 </li>
+                                 <li class="has-child homekit">
+                                     <a href="#">
+                                         <div class="icon-large"><i class="ri-home-8-line"></i></div>
+                                         Home & Kitchen
+                                         <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                     </a>
+                                     <div class="mega">
+                                        <div class="flexcol">
+                                            <div class="row">
+                                                <h4><a href="#">Kitchen & Dining</a></h4>
+                                                <ul>
+                                                    <li><a href="#">Kitchen</a></li>
+                                                    <li><a href="#">Dining Room</a></li>
+                                                    <li><a href="#">Pantry</a></li>
+                                                    <li><a href="#">Great Room</a></li>
+                                                    <li><a href="#">Breakfast Nook</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="row">
+                                                <h4><a href="#">Living</a></h4>
+                                                <ul>
+                                                    <li><a href="#">Living Room</a></li>
+                                                    <li><a href="#">Family ROom</a></li>
+                                                    <li><a href="#">Sun Room</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="flexcol">
+                                            <div class="row">
+                                                <h4><a href="#">Bed & Bath</a></h4>
+                                                <ul>
+                                                    <li><a href="#">Bathroom</a></li>
+                                                    <li><a href="#">Powder Room</a></li>
+                                                    <li><a href="#">Bedroom</a></li>
+                                                    <li><a href="#">Storage & Closet</a></li>
+                                                    <li><a href="#">Baby & Kids</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="row">
+                                                <h4><a href="#">Utility</a></h4>
+                                                <ul>
+                                                    <li><a href="#">Laundry</a></li>
+                                                    <li><a href="#">Garage</a></li>
+                                                    <li><a href="#">Mudroom</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="flexcol">
+                                            <div class="row">
+                                                <h4><a href="#">Outdoor</a></h4>
+                                                <ul>
+                                                    <li><a href="#">Landscape</a></li>
+                                                    <li><a href="#">Patio</a></li>
+                                                    <li><a href="#">Deck</a></li>
+                                                    <li><a href="#">Pool</a></li>
+                                                    <li><a href="#">Backyard</a></li>
+                                                    <li><a href="#">Porch</a></li>
+                                                    <li><a href="#">Exterior</a></li>
+                                                    <li><a href="#">Outdoor Kitchen</a></li>
+                                                    <li><a href="#">Front Yard</a></li>
+                                                    <li><a href="#">Driveway</a></li>
+                                                    <li><a href="#">Poolhouse</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                     </div>
+                                 </li>
+                                 <li>
+                                     <a href="#">
+                                     <div class="icon-large"><i class="ri-android-line"></i></div>
+                                     Pet Supplies
+                                  </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                <div class="icon-large"><i class="ri-basketball-line"></i></div>
+                                Sports
+                             </a>
+                         </li>
+                         <li>
+                             <a href="#">
+                             <div class="icon-large"><i class="ri-shield-star-line"></i></div>
+                             Best Seller
+                          </a>
+                      </li>
+                             </ul>
+                            </div>
+                     </div>
+                    </div>
+                        <div class="right">
+                            <div class="search-box">
+                                <form action="" class="search">
+                                    <span class="icon-large"><i class="ri-search-line"></i></span>
+                                    <input type="search" placeholder="Search for products">
+                                    <button type="submit">Search</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </header>
 
-        <main></main>
+        <main>
+            <div class="slider">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="myslider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="image object-cover">
+                                            <img src="fotos/slider/minecraft.jpg" alt="">
+                                        </div>
+                                        <div class="text-content flexcol">
+                                            <h4>Lançamento</h4>
+                                            <h2><span>Minecraft Legends</span><br><span>Adquira  já!</span></h2>
+                                            <a href="#" class="primary-button">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="image object-cover">
+                                            <img src="fotos/produtos/hog4.webp" alt="">
+                                        </div>
+                                        <div class="text-content flexcol">
+                                            <h4>Lançamento</h4>
+                                            <h2><span>Hogwarts Legacy</span><br><span>Adquira  já!</span></h2>
+                                            <a href="#" class="primary-button">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="image object-cover">
+                                            <img src="fotos/produtos/gothan.webp" alt="">
+                                        </div>
+                                        <div class="text-content flexcol">
+                                            <h4>Lançamento</h4>
+                                            <h2><span>Gotham Knights</span><br><span>Adquira  já!</span></h2>
+                                            <a href="#" class="primary-button">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="image object-cover">
+                                            <img src="fotos/produtos/marvel4.jpg" alt="">
+                                        </div>
+                                        <div class="text-content flexcol">
+                                            <h4>Lançamento</h4>
+                                            <h2><span>Marvel Midnight Suns</span><br><span>Adquira  já!</span></h2>
+                                            <a href="#" class="primary-button">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="image object-cover">
+                                            <img src="fotos/produtos/resident2.webp" alt="">
+                                        </div>
+                                        <div class="text-content flexcol">
+                                            <h4>Lançamento</h4>
+                                            <h2><span>Resident Evil 4</span><br><span>Adquira  já!</span></h2>
+                                            <a href="#" class="primary-button">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="image object-cover">
+                                            <img src="fotos/produtos/diabloiv.jpg" alt="">
+                                        </div>
+                                        <div class="text-content flexcol">
+                                            <h4>Lançamento</h4>
+                                            <h2><span>Diablo IV</span><br><span>Adquira  já!</span></h2>
+                                            <a href="#" class="primary-button">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="brands">
+                <div class="container">
+                    <div class="wrapper flexitem">
+                        <div class="item">
+                            <a href="#">
+                                <img src="fotos/marcas/warner.png" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="fotos/marcas/valve.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="fotos/marcas/bli.png" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="fotos/marcas/steam.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="fotos/marcas/eas.png" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="fotos/marcas/rockstar.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trending">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="sectop flexitem">
+                            <h2><span class="circle"></span><span>Produtos em alta</span></h2>
+                        </div>
+                        <div class="column">
+                            <div class="flexwrap">
+                                <div class="row products big">
+                                    <div class="item">
+                                        <div class="offer">
+                                        <p>Promoção Termina Em:</p>
+                                        <ul class="flexcenter">
+                                            <li>1</li>
+                                            <li>15</li>
+                                            <li>27</li>
+                                            <li>60</li>
+                                        </ul>
+                                        </div>
+                                        <div class="media">
+                                            <div class="image">
+                                                <a href="#">
+                                                    <img src="fotos/produtos/resident4.jpeg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="hoverable">
+                                                <ul>
+                                                    <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                                </ul>
+                                         </div>
+                                            <div class="discount circle flexcenter"><span>50%</span></div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="rating">
+                                                <div class="stars"></div>
+                                                <span class="mini-text">(2,548)</span>
+                                            </div>
+                                            <h3 class="main-links"><a href="#">Resident Evil Village</a></h3>
+                                            <div class="price">
+                                                <span class="current">R$149.99</span>
+                                                <span class="normal mini-text">R$299.99</span>
+                                            </div>
+                                            <div class="stock mini-text">
+                                                <div class="qty">
+                                                    <span>Stock: <strong class="qty-available">107</strong></span>
+                                                    <span>Sold: <strong class="qty-sold">3.459</strong></span>
+                                                </div>
+                                                <div class="bar">
+                                                    <div class="available"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                     </div>
+                                 </div> 
+                             </div>
+                         </div>
+                     </div>
+                </div>
+            </div>
+         </div>
+
+         
+         <section class="trending-product" id="trending">
+            <div class="center-text">
+                <h2>Produtos <span>
+                     Lançamentos</span></h2>
+            </div>
+    
+            <div class="products">
+                <div class="row">
+                    <img src="fotos/produtos/homemaranha2.jpeg" alt="">
+                    <div class="product-text">
+                        <h5>Em Alta</h5>
+                    </div>
+                    <div class="heart-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <div class="ratting">
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star-half' style="color:#f29f05"></i>
+                    </div>
+    
+                    <div class="price">
+                        <h4>Homem Aranha 2</h4>
+                        <p>R$84.99</p>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <img src="fotos/produtos/zelda.jpg" alt="">
+                    <div class="product-text">
+                        <h5>Lançamento</h5>
+                    </div>
+                    <div class="heart-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <div class="ratting">
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star-half' style="color:#f29f05"></i>
+                    </div>
+    
+                    <div class="price">
+                        <h4>The Legend of Zelda: Tears of the Kingdom</h4>
+                        <p>R$399.99</p>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <img src="fotos/produtos/starwars.jpeg" alt="">
+    
+                    <div class="heart-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <div class="ratting">
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star-half' style="color:#f29f05"></i>
+                    </div>
+    
+                    <div class="price">
+                        <h4>Star Wars Jedi: Survivor</h4>
+                        <p>R$299.99</p>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <img src="fotos/produtos/street.jpeg" alt="">
+                    <div class="product-text">
+                        <h5>Lançamento</h5>
+                    </div>
+                    <div class="heart-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <div class="ratting">
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star-half' style="color:#f29f05"></i>
+                    </div>
+    
+                    <div class="price">
+                        <h4>Street Fighter 6</h4>
+                        <p>R$259.99</p>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <img src="fotos/produtos/diabloori.jpeg" alt="">
+    
+                    <div class="heart-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <div class="ratting">
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star-half' style="color:#f29f05"></i>
+                    </div>
+    
+                    <div class="price">
+                        <h4>Diablo IV</h4>
+                        <p>R$159.99</p>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <img src="fotos/produtos/odyssey.jpg" alt="">
+                    <div class="product-text">
+                        <h5>Lançamento</h5>
+                    </div>
+                    <div class="heart-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <div class="ratting">
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star-half' style="color:#f29f05"></i>
+                    </div>
+    
+                    <div class="price">
+                        <h4>One Piace Odyssey</h4>
+                        <p>R$149.99</p>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <img src="fotos/produtos/allan.jpg" alt="">
+                    <div class="product-text">
+                        <h5>Lançamento</h5>
+                    </div>
+                    <div class="heart-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <div class="ratting">
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star-half' style="color:#f29f05"></i>
+                    </div>
+    
+                    <div class="price">
+                        <h4>Allan Wake ll: Remastered</h4>
+                        <p>R$99.99</p>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <img src="fotos/produtos/deadss.jpeg" alt="">
+                    <div class="product-text">
+                        <h5>Lnçamento</h5>
+                    </div>
+                    <div class="heart-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <div class="ratting">
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star-half' style="color:#f29f05"></i>
+                    </div>
+    
+                    <div class="price">
+                        <h4>Dead Space</h4>
+                        <p>R$199.99</p>
+                    </div>
+                </div>
+            </div>
+    
+        </section>
+
+        
+    
+        <!-- contact-section -->
+        <section class="contact">
+            <div class="contact-info">
+                <div class="first-info">
+                    <img src="fotos/albatroz.jpg" alt="">
+    
+                    <p>Rua Albatroz,  <br> Ladeira</p>
+                    <p>(11) 985244875</p>
+                    <p>albatroz@gmail.com</p>
+    
+                    <div class="social-icon">
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-twitter' ></i></a>
+                        <a href="#"><i class='bx bxl-instagram' ></i></a>
+                        <a href="#"><i class='bx bxl-youtube' ></i></a>
+                        <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                    </div>
+                </div>
+    
+                <div class="second-info">
+                    <h4>Suporte</h4>
+                    <p>Contate-nos</p>
+                    <p>Sobre o site</p>
+                </div>
+    
+                <div class="third-info">
+                    <h4>Compras</h4>
+                    <p>Jogos Gratuitos</p>
+                    <p>Jogos Lançamentos</p>
+                    <p>Jogos Offline</p>
+                    <p>Jogar com amigos</p>
+                    <p>Jogos com desconto</p>
+                </div>
+    
+                <div class="fourth-info">
+                    <h4>Empresa</h4>
+                    <p>Sobre</p>
+                    <p>Blog</p>
+                    <p>Afiliado</p>
+                    <p>Login</p>
+                </div>
+    
+                <div class="five">
+                    <h4>SE INSCREVER</h4>
+                    <p>Receba atualizações, ofertas especiais e descontos enviados diretamente na sua caixa de entrada diariamente</p>
+                </div>
+            </div>
+        </section>
+                 
+            
+             
+            
+        </main>
         
         <footer></footer>
     </div>
-
-    <script src="../Albatroz/js/menu.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
