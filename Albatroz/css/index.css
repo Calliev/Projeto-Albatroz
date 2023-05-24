@@ -41,6 +41,11 @@
 
 /*--------- departaments-------*/
 
+body{
+    background: linear-gradient(90deg, #1b2839 60%, #1b2839 40.1%);
+}
+
+
 .header-main{
     background-color: var(--secondary-dark-color);
     padding: 1.5em 0;
