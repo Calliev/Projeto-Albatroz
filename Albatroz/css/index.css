@@ -6,6 +6,10 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-style: italic;
+    font-weight: white;
+    
+    
 }
 
 :root{
@@ -59,13 +63,13 @@ body{
     position: relative;
     width: 300px;
     padding: 0.75em 1.5em;
-    background-color: var(--primari-color);
+    background-color: #1c304b;
     border-radius: 7px 7px 0 0;
     color: var(--white-color);
     margin-bottom: -2.15em;
 }
 .dpt-cat .dpt-head .mini-text{
-    color: var(--ligth-bg-color);
+    color: white;
 }
 .dpt-cat .dpt-trigger{
     position: absolute;
@@ -76,6 +80,11 @@ body{
     width: 60px;
     color: var(--white-color);
 }
+
+.header-nav{
+    background: linear-gradient(90deg, #1b2839 60%, #1b2839 40.1%);
+}
+
 
 .dpt-menu > ul > li > a {
     font-size: var(--font-small);
@@ -219,6 +228,7 @@ form.search button:hover{
     max-height: 2000px;
 }
 
+
 .off-canvas .thetop-nav ul, .off-canvas nav > ul {
     flex-direction: column;
     align-items: flex-start;
@@ -258,7 +268,9 @@ form.search button:hover{
 }
 
 
-
+a{
+    color: white;
+}
 
 
 
@@ -308,6 +320,12 @@ form.search button:hover{
 .main-links a:hover{
     color: var(--secondary-color);
 }
+
+
+.main-links li{
+    background-color: #1b2839;
+}
+
 .second-links a:hover{
     color: var(--ligth-text-color);
 }
@@ -416,6 +434,10 @@ form.search button:hover{
 .header-top  li{
     position: relative;
 }
+.header-top{
+    background: linear-gradient(90deg, #1b2839 60%, #1b2839 40.1%);
+}
+
 .header-top ul ul{
     position: absolute;
     left: -1em;
@@ -431,6 +453,12 @@ form.search button:hover{
 :where(.header-top, .thetop-nav) .right ul ul li.current a{
     background-color: var(--border-color);
 }
+
+.right ul ul li.current a{
+    background-color: #1b2839;
+}
+
+
 .header-top li:hover ul {
     display: block;
 }
@@ -613,7 +641,9 @@ nav .fly-item{
     top: -5px;
 }
 
-
+.textoc{
+    color: white;
+}
 
 .products .offer{
     text-align: center;
@@ -854,7 +884,7 @@ nav .fly-item{
         position: absolute;
         top: var(--percent100);
         width: 300px;
-        background-color: var(--white-color);
+        background-color: #1b2839;
         border: 1px solid var(--border-color);
         border-top: 0;
         border-bottom: 0;
@@ -903,7 +933,7 @@ nav .fly-item{
         left: 0;
         right: 0;
         bottom: 0;
-        background: linear-gradient(90deg, #ff6b6b 0%, rgba(233, 156, 156)  100%);
+        background: linear-gradient(90deg, #1b2839 0%, #2c2c2c  100%);
     }
     .dpt-menu .mega{
         width: auto;
@@ -1025,8 +1055,9 @@ header.sticky{
     transition: all .40s;
 }
 .row img{
-    width: 100%;
-    height: auto;
+    height: 200px;
+    object-fit: cover;
+    width: 200px;
     transition: all .40s;
 }
 .row img:hover{
@@ -1057,13 +1088,13 @@ header.sticky{
     font-size: 18px;
 }
 .price h4{
-    color: #111;
+    color: white;
     font-size: 16px;
     text-transform: capitalize;
     font-weight: 400;
 }
 .price p{
-    color: #151515;
+    color: var(--ligth-text-color);
     font-size: 14px;
     font-weight: 600;
 }
@@ -1203,6 +1234,9 @@ header.sticky{
         transition: .4s;
     }
 }
+
+
+
 @media(max-width:630px){
     .main-text h1{
         font-size: 50px;
