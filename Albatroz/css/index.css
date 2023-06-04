@@ -1079,7 +1079,7 @@ section{
 }
 .heart-icon{
     position: absolute;
-    right: 0;
+    right: 70px;
     font-size: 20px;
 }
 .heart-icon:hover{
