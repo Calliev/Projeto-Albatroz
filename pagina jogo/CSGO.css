@@ -110,12 +110,25 @@ main{
     align-items: center;
     width: 100px;
     height: 40px;
-    margin-top: 52px;
-    margin-left: 300px;
+    margin-top: 95px;
+    margin-left: -220px;
     background: linear-gradient(90deg, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     border: 1px solid black;
     border-radius: 10px;
     box-shadow: #92baee;
+}
+
+.preco1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    margin-top: 95px;
+    margin-left: 150px;
+    background: linear-gradient(90deg, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 .preco2{
@@ -124,8 +137,9 @@ main{
     align-items: center;
     width: 210px;
     height: 46px;
-    margin-top: 62px;
-    margin-left: 241px;
-    background-color: #4c6f9e;
-    border: 2px solid black;
+    margin-top: 95px;
+    margin-left: 200px;
+    background: linear-gradient(90deg, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    border: 1px solid black;
+    border-radius: 10px;
 }
