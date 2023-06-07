@@ -104,14 +104,28 @@ main{
     margin-left: 2.1rem;
 }
 
+.preco1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    margin-top: 105px;
+    margin-left: 260px;
+    background: linear-gradient(90deg, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+
 .preco{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100px;
     height: 40px;
-    margin-top: 52px;
-    margin-left: 300px;
+    margin-top: -40px;
+    margin-left: 370px;
     background: linear-gradient(90deg, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     border: 1px solid black;
     border-radius: 10px;
@@ -126,6 +140,7 @@ main{
     height: 46px;
     margin-top: 62px;
     margin-left: 241px;
-    background-color: #4c6f9e;
-    border: 2px solid black;
+    background: linear-gradient(90deg, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    border: 1px solid black;
+    border-radius: 10px;
 }
