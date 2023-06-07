@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700;800&family=Rubik:wght@300;400;500;600&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+    font-family: Rubik, sans-serif;
+}
+
+body{
+    background: linear-gradient(90deg, #1b2839 60%, #1b2839 40.1%);
+}
+
+img {
+	border: none;
+    width: 184px;
+    height: 80px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+div {
+    display: block;
+}
+
+.a:focus {
+	outline: 0px none;
+}
+
+a:hover {
+	text-decoration: none;
+    color: #66c0f4;
+}
+
+a.nohover:hover {
+	text-decoration: none;
+}
+
+.container{
+    position: relative;
+    margin-top: 2rem;
+    min-height: 100%;
+    font-size: 12px;
+    color: white
+}
+
+.container-menu a{
+    background: #202d39;
+    background: rgba( 0, 0, 0, 0.2 );
+    height: 80px;
+    margin-bottom: 5px;
+}
+
+.tab-item.focus{
+    /* background: -webkit-linear-gradient( left, #c6e6f8 5%,#95bcd3 95%);
+    background: linear-gradient( to right, #c6e6f8 5%,#95bcd3 95%); */
+    margin-right: 198px;
+    padding-right: 14px;
+    height: 70px;
+}
+
+.tab-item{
+    position: relative;
+    display: block;
+    /* background: #202d39;
+    background: rgba( 0, 0, 0, 0.2 ); */
+    height: 80px;
+    margin-bottom: 5rem;
+    padding-left: 198px;
+    text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+
+}
+
+.img-capa{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    line-height: 69px;
+    transition: opacity 0.25s;
+}
+
+.block-preco{
+    display: flex;
+    justify-content: space-between;
+    float: right;
+    margin-right: 16px;
+    background: none;
+    margin-top: 32px;
+    width: 133px;
+    text-align: right;
+}
+
+.block-disconto{
+    position: relative;
+    display: flex;
+}
+
+.block-conteudo{
+    display: flex;
+    background: #344654;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    padding-left: 4px;
+}
+
+.tab-item-conteudo{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-top: 6px;
+    font-size: 12px;
+}
+
+.tab-item-name{
+    position: relative;
+    color: white;
+    display: flex;
+    /* background: #202d39;
+    background: rgba( 0, 0, 0, 0.2 ); */
+    align-items: center;
+    height: 69px;
+    font-size: 28px;
+    margin-bottom: 5px;
+    padding-left: 198px;
+    text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+}
+
+.name-menu{
+    display: flex;
+    margin-bottom: 2rem;
+    align-items: center;
+    justify-content: center;
+}
