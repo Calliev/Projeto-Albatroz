@@ -55,7 +55,7 @@ function entrar(){
 
         localStorage.setItem('token', token)
         localStorage.setItem('userLogado', JSON.stringify(userValid))
-        window.location.href = "https://iafix.netlify.app"
+        window.location.href = "index.html"
         
     } else{
         userLabel.setAttribute('style', 'color: red')

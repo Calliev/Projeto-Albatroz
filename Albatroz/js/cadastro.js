@@ -193,5 +193,9 @@ class Validator {
     e.preventDefault();
   
     validator.validate(form);
+    if (validator == True){
+      window.location.href = "index.html"}
+
   });
+
   
