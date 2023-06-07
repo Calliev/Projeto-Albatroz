@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Albatroz</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+<link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <div id="page" class="site">
+
+        <aside class="site-off desktop-hide">
+            <div class="off-canvas">
+                <div class="canvas-head flexitem">
+                    <div class="logo"><a href="/"><span class="circle">.ABT</span></a></div>
+                    <a href="#" class="t-close flexcenter"><i class="ri-close-line"></i></a>
+                </div>
+                <div class="departments"></div>
+                <nav></nav>
+                <div class="thetop-nav"></div>
+            </div>
+        </aside>
+
+        <header>
+            <div class="header-top mobile-hide">
+                <div class="container">
+                    <div class="wrapper flexitem">
+                        <div class="right">
+                            <ul class="flexitem main-links">
+                                <li class="main-links">
+                                    <li><a href="Pagina_cadastro.html" target="_blank">Cadastre-se</a></li>
+                                    <li><a href="login.html" target="_blank">Minha Conta</a></li>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-nav">
+                <div class="container">
+                    <div class="wrapper flexitem">
+                        <a href="#" class="trigger desktop-hide"><span class="i ri-menu-2-line"></span></a>
+                        <div class="left flexitem">
+                            <div class="logo"><a href="/"><span class="circle">.ABT</span></a></div>
+                            <nav class="mobile-hide">
+                                <ul class="flexitem second-links">
+                                    <li><a href="index.html">Albatroz</a></li>
+                                    <li><a href="#loja">Loja</a></li>
+                                    <li class="has-child"><a href="#">Ajuda</a>
+                                </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="right">
+                            <ul class="flexitem second-links">
+                                <li class="mobile-hide"><a href="#">
+                                    <div class="icon-large"><i class="ri-heart-line"></i></div>
+                                    <div class="fly-item"><span class="item-number">0</span></div>
+                                </a></li>
+                                <li><a href="#" class="iscart">
+                                    <div class="icon-large">
+                                        <i class="ri-shopping-cart-line"></i>
+                                        <div class="fly-item"><span class="item-number">0</span></div>
+                                    </div>
+                                    <div class="icon-text">
+                                        <div class="mini-text">Total
+                                        </div>
+                                        <div class="cart-total">R$0.00</div>
+                                    </div>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-main mobile-hide" id="loja">
+                <div class="container">
+                    <div class="wrapper flexitem">
+                        <div class="left">
+                            <div class="dpt-cat">
+                                <div class="dpt-head">
+                                    <div class="main-text">All Departaments</div>
+                                    <div class="mini-text mobile-hide">  </div>
+                                    <a href="#" class="dpt-trigger mobile-hide">
+                                        <i class="ri-menu-3-line ri-xl"></i>
+                                    </a>
+                                </div>
+                                <div class="dpt-menu">
+                                    <ul class="second-links">
+                                        <li class="has-child beauty">
+                                            <a href="#">
+                                                <div class="icon-large"><i class="bx bx-game"></i></div>
+                                                Categorias
+                                                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                            </a>
+                                            <ul>
+                                                <li><a href="/categoria jogo/ação.html">Ação</a></li>
+                                                <li><a href="/categoria jogo/arcade.html">Arcade </a></li>
+                                                <li><a href="/categoria jogo/aventura.html">Aventura</a></li>
+                                                <li><a href="/categoria jogo/casual.html">Casual</a></li>
+                                                <li><a href="/categoria jogo/estrategia.html">Estratégia</a></li>
+                                                <li><a href="/categoria jogo/rpg.html">RPG</a></li>
+                                                <li><a href="/categoria jogo/terror.html">Terror</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-child electric">
+                                            <a href="#">
+                                                <div class="icon-large"><i class="bx bx-medal"></i></div>
+                                                Em Alta
+                                                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                            </a>
+                                            <ul>
+                                                <li><a href="#">Jogos Online</a></li>
+                                                <li><a href="#">Jogos Offline</a></li>
+                                                <li><a href="#">Carreira Solo</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-child fashion">
+                                            <a href="#">
+                                                <div class="icon-large"><i class="bx bx-trophy"></i></div>
+                                                Novidades e Destaques
+                                                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                            </a>
+                                            <ul>
+                                            <li><a href="#">Mais Vendidos</a></li>
+                                            <li><a href="#">Mais Jogados</a></li>
+                                            <li><a href="#promo">Promoções Especiais</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                        <a href="#">
+                                        <div class="icon-large"><i class="bx bx-search-alt-2"></i></div>
+                                        Mais Pesquisados
+                                    </a>
+                                 </li>
+                                
+                            </div>
+                     </div>
+                    </div>
+                        <div class="right">
+                            <div class="search-box">
+                                <form action="" class="search">
+                                    <span class="icon-large"><i class="ri-search-line"></i></span>
+                                    <input type="search" placeholder="Search for products">
+                                    <button type="submit">Search</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="slider">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="myslider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="image object-cover">
+                                            <img src="./fotos/slider/minecraft.jpg" alt="">
+                                        </div>
+                                        <div class="text-content flexcol">
+                                            <h4>Lançamento</h4>
+                                            <h2><span>Minecraft Legends</span><br><span>Adquira  já!</span></h2>
+                                            <a href="/pagina jogo/minelegends.html" class="primary-button">Compre Agora!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="image object-cover">
+                                            <img src="./fotos/slider/hog4.webp" alt="">
+                                        </div>
+                                        <div class="text-content flexcol">
+                                            <h4>Lançamento</h4>
+                                            <h2><span>Hogwarts Legacy</span><br><span>Adquira  já!</span></h2>
+                                            <a href="#" class="primary-button">Compre Agora!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="image object-cover">
+                                            <img src="./fotos/slider/gothan.webp" alt="">
+                                        </div>
+                                        <div class="text-content flexcol">
+                                            <h4>Lançamento</h4>
+                                            <h2><span>Gotham Knights</span><br><span>Adquira  já!</span></h2>
+                                            <a href="#" class="primary-button">Compre Agora!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="image object-cover">
+                                            <img src="./fotos/slider/marvel4.jpg" alt="">
+                                        </div>
+                                        <div class="text-content flexcol">
+                                            <h4>Lançamento</h4>
+                                            <h2><span>Marvel Midnight Suns</span><br><span>Adquira  já!</span></h2>
+                                            <a href="#" class="primary-button">Compre Agora!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="image object-cover">
+                                            <img src="./fotos/slider/resident2.webp" alt="">
+                                        </div>
+                                        <div class="text-content flexcol">
+                                            <h4>Lançamento</h4>
+                                            <h2><span>Resident Evil 4</span><br><span>Adquira  já!</span></h2>
+                                            <a href="/pagina jogo/re4.html" class="primary-button">Compre Agora!</a>
+                                        </div>
+                                    </div>
+                                </div>  
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="image object-cover">
+                                            <img src="./fotos/slider/diabloiv.jpg" alt="">
+                                        </div>
+                                        <div class="text-content flexcol">
+                                            <h4>Lançamento</h4>
+                                            <h2><span>Diablo IV</span><br><span>Adquira  já!</span></h2>
+                                            <a href="#" class="primary-button">Compre Agora!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="brands">
+                <div class="container">
+                    <div class="wrapper flexitem">
+                        <div class="item">
+                            <a href="#">
+                                <img src="./fotos/marcas/bli.png" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="./fotos/marcas/eas.png" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="./fotos/marcas/rockstar.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="./fotos/marcas/steam.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="./fotos/marcas/valve.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="./fotos/marcas/warner.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trending" id="promo">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="sectop flexitem">
+                            <h2><span class="circle"></span><span class="textoc">Super Promoção</span></h2>
+                        </div>
+                        <div class="column">
+                            <div class="flexwrap">
+                                <div class="row products big">
+                                    <div class="item">
+                                        <div class="offer">
+                                        <p>Promoção Termina Em:</p>
+                                        <ul class="flexcenter">
+                                            <li>1</li>
+                                            <li>15</li>
+                                            <li>27</li>
+                                            <li>60</li>
+                                        </ul>
+                                        </div>
+                                        <div class="media">
+                                            <div class="image">
+                                                <a href="/pagina jogo/re4.html">
+                                                    <img src="fotos/produtos/resident4.jpeg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="hoverable">
+                                                <ul>
+                                                    <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                                </ul>
+                                         </div>
+                                            <div class="discount circle flexcenter"><span>50%</span></div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="rating">
+                                                <div class="stars"></div>
+                                                <span class="mini-text">(2,548)</span>
+                                            </div>
+                                            <h3 class="main-links"><a href="#">Resident Evil Village</a></h3>
+                                            <div class="price">
+                                                <span class="current">R$149.99</span>
+                                                <span class="normal mini-text">R$299.99</span>
+                                            </div>
+                                            <div class="stock mini-text">
+                                                <div class="qty">
+                                                    <span>Stock: <strong class="qty-available">107</strong></span>
+                                                    <span>Sold: <strong class="qty-sold">3.459</strong></span>
+                                                </div>
+                                                <div class="bar">
+                                                    <div class="available"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                     </div>
+                                 </div> 
+                             </div>
+                         </div>
+                     </div>
+                </div>
+            </div>
+         </div>
+
+         
+         <section class="trending-product" id="trending">
+            <div class="center-text">
+                <h2>Produtos <span>
+                     Lançamentos</span></h2>
+            </div>
+    
+            <div class="products">
+                <div class="row">
+                    <a href="/pagina jogo/milesmorales.html">
+                        <img src="./fotos/produtos/homemaranha2.jpg" alt="">
+                        </a>
+                    <div class="product-text">
+                        <h5>Em Alta</h5>
+                    </div>
+                    <div class="heart-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <div class="ratting">
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star-half' style="color:#f29f05"></i>
+                    </div>
+    
+                    <div class="price">
+                        <h4>Homem Aranha 2</h4>
+                        <p>R$84.99</p>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <a href="/pagina jogo/zelda.html"><img src="fotos/produtos/zelda.jpg" alt=""></a>
+                    <div class="product-text">
+                        <h5>Lançamento</h5>
+                    </div>
+                    <div class="heart-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <div class="ratting">
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star-half' style="color:#f29f05"></i>
+                    </div>
+    
+                    <div class="price">
+                        <h4>The Legend of Zelda: Tears of the Kingdom</h4>
+                        <p>R$399.99</p>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <img src="fotos/produtos/starwars.jpeg" alt="">
+    
+                    <div class="heart-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <div class="ratting">
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star-half' style="color:#f29f05"></i>
+                    </div>
+    
+                    <div class="price">
+                        <h4 class="textoc">Star Wars Jedi: Survivor</h4>
+                        <p class="textoc">R$299.99</p>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <a href=""><img src="fotos/produtos/street.jpeg" alt=""></a>
+                    <div class="product-text">
+                        <h5>Lançamento</h5>
+                    </div>
+                    <div class="heart-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <div class="ratting">
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star-half' style="color:#f29f05"></i>
+                    </div>
+    
+                    <div class="price">
+                        <h4>Street Fighter 6</h4>
+                        <p>R$259.99</p>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <a href="/pagina jogo/street6.html"><img src="fotos/produtos/diabloori.jpeg" alt=""></a>
+    
+                    <div class="heart-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <div class="ratting">
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star-half' style="color:#f29f05"></i>
+                    </div>
+    
+                    <div class="price">
+                        <h4>Diablo IV</h4>
+                        <p>R$159.99</p>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <img src="fotos/produtos/odyssey.jpg" alt="">
+                    <div class="product-text">
+                        <h5>Lançamento</h5>
+                    </div>
+                    <div class="heart-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <div class="ratting">
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star-half' style="color:#f29f05"></i>
+                    </div>
+    
+                    <div class="price">
+                        <h4>One Piace Odyssey</h4>
+                        <p>R$149.99</p>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <img src="fotos/produtos/wake.png" alt="">
+                    <div class="product-text">
+                        <h5>Lançamento</h5>
+                    </div>
+                    <div class="heart-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <div class="ratting">
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star-half' style="color:#f29f05"></i>
+                    </div>
+    
+                    <div class="price">
+                        <h4>Allan Wake ll: Remastered</h4>
+                        <p>R$99.99</p>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <img src="fotos/produtos/deadss.jpeg" alt="">
+                    <div class="product-text">
+                        <h5>Lançamento</h5>
+                    </div>
+                    <div class="heart-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <div class="ratting">
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star' style="color:#f29f05"></i>
+                        <i class='bx bxs-star-half' style="color:#f29f05"></i>
+                    </div>
+    
+                    <div class="price">
+                        <h4>Dead Space</h4>
+                        <p>R$199.99</p>
+                    </div>
+                </div>
+            </div>
+    
+        </section>
+
+        
+    
+        <!-- contact-section -->
+        <section class="contact">
+            <div class="contact-info">
+                <div class="first-info">
+                    <img src="fotos/albatroz.jpg" alt="">
+    
+                    <p>Rua Albatroz,  <br> Ladeira</p>
+                    <p>(11) 985244875</p>
+                    <p>albatroz@gmail.com</p>
+    
+                    <div class="social-icon">
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-twitter' ></i></a>
+                        <a href="#"><i class='bx bxl-instagram' ></i></a>
+                        <a href="#"><i class='bx bxl-youtube' ></i></a>
+                        <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                    </div>
+                </div>
+    
+                <div class="second-info">
+                    <h4>Suporte</h4>
+                    <p>Contate-nos</p>
+                    <p>Sobre</p>
+                </div>
+    
+                <div class="third-info">
+                    <h4>Compras</h4>
+                    <p>Jogos Gratuitos</p>
+                    <a href="#trending"><p>Jogos Lançamentos</p></a>
+                    <p>Jogos Offline</p>
+                    <p>Jogar com amigos</p>
+                    <a href="#promo"><p>Jogos com desconto</p></a>
+                </div>
+    
+    
+                <div class="five">
+                    <h4>SE INSCREVER</h4>
+                    <p>Receba atualizações, ofertas especiais e descontos enviados diretamente na sua caixa de entrada diariamente</p>
+                </div>
+            </div>
+        </section>
+
+        </main>
+        
+        <footer></footer>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
